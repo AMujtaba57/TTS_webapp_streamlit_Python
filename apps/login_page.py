@@ -9,7 +9,6 @@ class LoginPage:
 
 
     def LoggedIn_Clicked(self, userName, password):
-        print(type(userName), type(password))
         if userName=="ahmad" and password=="12345":
             st.session_state['loggedIn'] = True
         else:

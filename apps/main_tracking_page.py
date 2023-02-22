@@ -1,5 +1,5 @@
 import streamlit as st
-
+from apps.keyword_page import *
 
 class TwitterTracking:
     def __init__(self, menu_items) -> None:
@@ -15,6 +15,7 @@ class TwitterTracking:
 
     def keywords(self):
         st.write("This is the Keywords page.")
+        keyword_action()
 
     def description(self):
         st.write("This is the description page.")
