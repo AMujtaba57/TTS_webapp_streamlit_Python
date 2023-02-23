@@ -1,4 +1,3 @@
-# import module
 import json
 import sqlite3
 import hashlib
@@ -11,9 +10,7 @@ from streamlit.source_util import _on_pages_changed, get_pages
 
 
 DEFAULT_PAGE = "main.py"
-# SECOND_PAGE_NAME = "main.py"
 
-# all pages request
 def get_all_pages():
     default_pages = get_pages(DEFAULT_PAGE)
 
@@ -27,7 +24,7 @@ def get_all_pages():
 
     return saved_default_pages
 
-# clear all page but not login page
+
 def clear_all_but_first_page():
     current_pages = get_pages(DEFAULT_PAGE)
 
@@ -36,14 +33,13 @@ def clear_all_but_first_page():
 
     get_all_pages()
 
-    # Remove all but the first page
     key, val = list(current_pages.items())[0]
     current_pages.clear()
     current_pages[key] = val
 
     _on_pages_changed.send()
 
-# show all pages
+
 def show_all_pages():
     current_pages = get_pages(DEFAULT_PAGE)
     saved_pages = get_all_pages()
@@ -53,7 +49,7 @@ def show_all_pages():
 
     _on_pages_changed.send()
 
-# Hide default page
+
 def hide_page(name: str):
     current_pages = get_pages(DEFAULT_PAGE)
 
@@ -63,15 +59,15 @@ def hide_page(name: str):
             _on_pages_changed.send()
             break
 
-# calling only default(login) page  
+ 
 clear_all_but_first_page()
 
-# session state 
+
 if "logged_in" not in st.session_state:
     st.session_state["logged_in"] = False
     
 
-def main():
+def main_function():
     if st.session_state['logged_in'] == False:
         st.write("""
         <style>
@@ -113,13 +109,13 @@ def main():
     
     
     if st.session_state["logged_in"] == True:
-          # call all page
+
         show_all_pages()
-        hide_page(DEFAULT_PAGE.replace(".py", ""))  # hide first page
+        hide_page(DEFAULT_PAGE.replace(".py", "")) 
         
     else:
-        clear_all_but_first_page()  # clear all page but show first page
+        clear_all_but_first_page() 
 
 
 if __name__ == "__main__":
-    main()
+    main_function()
