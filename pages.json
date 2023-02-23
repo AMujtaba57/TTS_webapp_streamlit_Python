@@ -1,0 +1,50 @@
+{
+    "81866aa3294fca6d3424424218cfb1c4": {
+        "page_script_hash": "81866aa3294fca6d3424424218cfb1c4",
+        "page_name": "main",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/main.py"
+    },
+    "0b7b789512ee7691b9d1af9599acf3de": {
+        "page_script_hash": "0b7b789512ee7691b9d1af9599acf3de",
+        "page_name": "Twitter_Tracking_Service",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/01_Twitter_Tracking_Service.py"
+    },
+    "2a14abe904031296f28fa0ca79737325": {
+        "page_script_hash": "2a14abe904031296f28fa0ca79737325",
+        "page_name": "Keywords",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/02_Keywords.py"
+    },
+    "8af53a874abbed82c4023eeb9662ad3e": {
+        "page_script_hash": "8af53a874abbed82c4023eeb9662ad3e",
+        "page_name": "Description_Search",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/03_Description_Search.py"
+    },
+    "dc12e87bd4f9addb8875230c56309be5": {
+        "page_script_hash": "dc12e87bd4f9addb8875230c56309be5",
+        "page_name": "Tracker_Input",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/04_Tracker_Input.py"
+    },
+    "5299bd2ba259b250797a8c5983e816d4": {
+        "page_script_hash": "5299bd2ba259b250797a8c5983e816d4",
+        "page_name": "Tracker_Output",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/05_Tracker_Output.py"
+    },
+    "f59f7de4fb33590ca925c49012df718b": {
+        "page_script_hash": "f59f7de4fb33590ca925c49012df718b",
+        "page_name": "Portfolio",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/06_Portfolio.py"
+    },
+    "57b9e0b9b05e4213dc945016cc5d7a99": {
+        "page_script_hash": "57b9e0b9b05e4213dc945016cc5d7a99",
+        "page_name": "Admin",
+        "icon": "",
+        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/07_Admin.py"
+    }
+}
