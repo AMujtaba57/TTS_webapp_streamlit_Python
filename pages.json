@@ -3,48 +3,48 @@
         "page_script_hash": "5bc02cefb3ea9e27f1a6776eabd1935d",
         "page_name": "main",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/main.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\main.py"
     },
-    "0b7b789512ee7691b9d1af9599acf3de": {
-        "page_script_hash": "0b7b789512ee7691b9d1af9599acf3de",
+    "fecf332a748d87dadf3ea5879224ea78": {
+        "page_script_hash": "fecf332a748d87dadf3ea5879224ea78",
         "page_name": "Twitter_Tracking_Service",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/01_Twitter_Tracking_Service.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\01_Twitter_Tracking_Service.py"
     },
-    "2a14abe904031296f28fa0ca79737325": {
-        "page_script_hash": "2a14abe904031296f28fa0ca79737325",
+    "c962f6de1c8fa1270b557abf4bf8e752": {
+        "page_script_hash": "c962f6de1c8fa1270b557abf4bf8e752",
         "page_name": "Keywords",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/02_Keywords.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\02_Keywords.py"
     },
-    "8af53a874abbed82c4023eeb9662ad3e": {
-        "page_script_hash": "8af53a874abbed82c4023eeb9662ad3e",
+    "2996cf7c3fb8595b01d15483004a10d3": {
+        "page_script_hash": "2996cf7c3fb8595b01d15483004a10d3",
         "page_name": "Description_Search",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/03_Description_Search.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\03_Description_Search.py"
     },
-    "dc12e87bd4f9addb8875230c56309be5": {
-        "page_script_hash": "dc12e87bd4f9addb8875230c56309be5",
+    "27a92ed6564c1c482cf5fcc7d0b078b0": {
+        "page_script_hash": "27a92ed6564c1c482cf5fcc7d0b078b0",
         "page_name": "Tracker_Input",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/04_Tracker_Input.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\04_Tracker_Input.py"
     },
-    "5299bd2ba259b250797a8c5983e816d4": {
-        "page_script_hash": "5299bd2ba259b250797a8c5983e816d4",
+    "1d6ffd7e62f5b8c6e6ad31cccdfe1242": {
+        "page_script_hash": "1d6ffd7e62f5b8c6e6ad31cccdfe1242",
         "page_name": "Tracker_Output",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/05_Tracker_Output.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\05_Tracker_Output.py"
     },
-    "f59f7de4fb33590ca925c49012df718b": {
-        "page_script_hash": "f59f7de4fb33590ca925c49012df718b",
+    "5970c5b478d0eaf4e0eca8a1c5082c11": {
+        "page_script_hash": "5970c5b478d0eaf4e0eca8a1c5082c11",
         "page_name": "Portfolio",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/06_Portfolio.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\06_Portfolio.py"
     },
-    "57b9e0b9b05e4213dc945016cc5d7a99": {
-        "page_script_hash": "57b9e0b9b05e4213dc945016cc5d7a99",
+    "0255e588e85aad9a2659df188e9efb33": {
+        "page_script_hash": "0255e588e85aad9a2659df188e9efb33",
         "page_name": "Admin",
         "icon": "",
-        "script_path": "/home/ahmad-mujtaba/Ahmad_Mujtaba/python_work/tts_webapp_streamlit_Python/pages/07_Admin.py"
+        "script_path": "D:\\Freelancing_Work\\tts_webapp_streamlit_Python\\pages\\07_Admin.py"
     }
 }
