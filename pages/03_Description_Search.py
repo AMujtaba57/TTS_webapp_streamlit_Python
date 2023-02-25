@@ -1,12 +1,22 @@
 import streamlit as st
 import pandas as pd
+from st_aggrid import AgGrid, GridUpdateMode
+from st_aggrid.grid_options_builder import GridOptionsBuilder
 
+
+def show_table_disable(df):
+    gd = GridOptionsBuilder.from_dataframe(df)
+    gd.configure_pagination(enabled=True)
+    gd.configure_default_column(editable=False ,groupable=True)
+    gd.configure_selection(selection_mode='Single', use_checkbox=False)
+    gridoptions = gd.build()
+    AgGrid(df, gridOptions=gridoptions, editable=False,
+            update_mode=GridUpdateMode.SELECTION_CHANGED,
+            allow_unsafe_jscode=True,
+            theme='alpine')
 
 def description_search():
-    data = {"Name": ["John", "Mary", "Bob", "Alice"],
-        "Age": [25, 30, 40, 35],
-        "Gender": ["Male", "Female", "Male", "Female"]}
-    df = pd.DataFrame(data)
+    df = pd.read_csv("data/example_data.csv")
 
     st.write("<h3>Search Description</h3>", unsafe_allow_html=True)
     with st.form('Login'):
@@ -29,9 +39,8 @@ def description_search():
 
         st.write('<style> div[data-testid=column] > div > div > div > div.stRadio > div{flex-direction: row;}</style>', unsafe_allow_html=True)
         col_radio.radio("Search Type", options=['And', 'Or'])
-        # select_radio = col_radio.radio("Search Type", options=['And', 'Or'],horizontal=True)
-
-    st.table(df)
+        
+    show_table_disable(df)
 
 
 if __name__ == '__main__':

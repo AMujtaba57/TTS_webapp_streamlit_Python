@@ -1,0 +1,18 @@
+,,,
+,,,
+,,,
+,Overview of Excel Tabs,,
+,,,
+,Singal Input,,"provides an example view of how the data is presented to the user for the ""Signal Input"". The current mechanism is done via manual input input an Excel type sheet"
+,Project Input,,"provides an example view of how the data is presented to the user for the ""Project Input"". The current mechanism is done via manual input input an Excel type sheet"
+,Signal and Project fielddetail ,,general requirements of the aggrid table generated from the newly developed application for the Signal Input table and Project Input table
+,,,
+,twitter tracking output,,"provides an example view of how the data is presented to the user for Tracking Output. Ideally, the appication should provide similar view/functionality"
+,output field details,,general requirements of the aggrid table generated from the newly developed application of the Twitter Tracking Output
+,,,
+,keyword input,,"provides an example view of how the data is presented to the user for the ""Keyword Input"". The current mechanism is done via manual input input an Excel type sheet"
+,keyword field details,,general requirements of the aggrid table generated from the newly developed application of the keyword input
+,,,
+,Database Tables,,Representations of the tables within the database
+,,,
+,Resources,,Additional resources for developer assistance

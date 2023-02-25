@@ -4,7 +4,7 @@ from st_aggrid import AgGrid, GridUpdateMode
 from st_aggrid.grid_options_builder import GridOptionsBuilder
 
 
-df = pd.read_csv("data/ranking.csv")
+df = pd.read_csv("data/example_data.csv")
 
 if "editing_enabled" not in st.session_state:
     st.session_state["editing_enabled"] = False
@@ -26,7 +26,6 @@ def show_table_editable(df):
         gridoptions = gd.build()
         grid_table = AgGrid(df, gridOptions=gridoptions, editable=True,
                 update_mode=GridUpdateMode.SELECTION_CHANGED,
-                height=500,
                 allow_unsafe_jscode=True,
                 theme='alpine')
 
@@ -42,7 +41,6 @@ def show_table_disable(df):
         gridoptions = gd.build()
         AgGrid(df, gridOptions=gridoptions, editable=False,
                 update_mode=GridUpdateMode.SELECTION_CHANGED,
-                height=500,
                 allow_unsafe_jscode=True,
                 theme='alpine')
 

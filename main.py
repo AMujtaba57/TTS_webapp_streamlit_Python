@@ -101,7 +101,7 @@ def main_function():
             login_button = st.form_submit_button('Login')
             
             if login_button:
-                if username=='ahmad' and password=='1234':
+                if username=='' and password=='':
                     st.session_state["logged_in"] = True
                     st.success("Logged In Sucessfully")
                 else:
@@ -109,7 +109,6 @@ def main_function():
     
     
     if st.session_state["logged_in"] == True:
-
         show_all_pages()
         hide_page(DEFAULT_PAGE.replace(".py", "")) 
         
