@@ -14,8 +14,7 @@ if "show_table_disable" not in st.session_state:
 
 if "show_table_editable" not in st.session_state:
     st.session_state["show_table_editable"] = False
-
-
+    
 def show_table_editable(df):
     if st.session_state["show_table_editable"] and st.session_state['editing_enabled'] and st.session_state["show_table_disable"] == False:
         gd = GridOptionsBuilder.from_dataframe(df)
@@ -106,8 +105,11 @@ def tracker_input_action():
             show_table_disable(df)
             
     
-    st.write(st.session_state)
 
 if __name__ == "__main__":
-    tracker_input_action()
+    if st.session_state["logged_in"] == True:
+        st.sidebar.button("Logout")
+        tracker_input_action()
+    else:
+        st.subheader("session has been logout")
     

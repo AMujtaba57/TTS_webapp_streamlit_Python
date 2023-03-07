@@ -103,8 +103,11 @@ def keyword_action():
             show_table_disable(df)
             
     
-    st.write(st.session_state)
 
 if __name__ == "__main__":
-    keyword_action()
+    if st.session_state["logged_in"] == True:
+        st.sidebar.button("Logout")
+        keyword_action()
+    else:
+        st.subheader("session has been logout")
     

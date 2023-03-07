@@ -44,4 +44,8 @@ def description_search():
 
 
 if __name__ == '__main__':
-    description_search()
+    if st.session_state["logged_in"] == True:
+        st.sidebar.button("Logout")
+        description_search()
+    else:
+        st.subheader("session has been logout")

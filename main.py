@@ -1,4 +1,4 @@
-import json
+import json, time
 import sqlite3
 import hashlib
 import requests
@@ -7,7 +7,6 @@ from pathlib import Path
 from streamlit_lottie import st_lottie
 from streamlit_extras.switch_page_button import switch_page
 from streamlit.source_util import _on_pages_changed, get_pages
-
 
 DEFAULT_PAGE = "main.py"
 
@@ -59,16 +58,13 @@ def hide_page(name: str):
             _on_pages_changed.send()
             break
 
- 
-clear_all_but_first_page()
-
-
-if "logged_in" not in st.session_state:
-    st.session_state["logged_in"] = False
-    
 
 def main_function():
-    if st.session_state['logged_in'] == False:
+    
+    if "logged_in" not in st.session_state:
+        st.session_state["logged_in"] = False
+
+    if not st.session_state["logged_in"]:
         st.write("""
         <style>
             .center {
@@ -99,21 +95,23 @@ def main_function():
             username = st.text_input("Username", placeholder="")
             password = st.text_input("Password", type="password")
             login_button = st.form_submit_button('Login')
-            
+
             if login_button:
                 if username=='' and password=='':
                     st.session_state["logged_in"] = True
                     st.success("Logged In Sucessfully")
+                    time.sleep(1)
+                    switch_page("main")
                 else:
                     st.warning("Incorrect username Id/Password")
-    
-    
-    if st.session_state["logged_in"] == True:
+
+
+    if st.session_state["logged_in"]:
         show_all_pages()
-        hide_page(DEFAULT_PAGE.replace(".py", "")) 
-        
+        hide_page(DEFAULT_PAGE.replace(".py", ""))
+
     else:
-        clear_all_but_first_page() 
+        clear_all_but_first_page()
 
 
 if __name__ == "__main__":
